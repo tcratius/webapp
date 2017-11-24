@@ -1,12 +1,9 @@
-{% load staticfiles %}
-<!doctype html>
-<html>
-<head>
-    <title>Bone of webapp</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-</head>
-<body>
-    <h1>Von Rat say Hello</h1>
-    <p>basic paragraph</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}
+    Homepage - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <h1>Heading number 1</h1>
+    <p>Just a paragraph</p>
+{% endblock content %}
